@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fillout Form</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        // URL du formulaire Fillout
+        var formUrl = 'https://nadosos.fillout.com/calendrier-sos';
+
+        // Dimensions de la fenêtre popup
+        var popupWidth = 600;
+        var popupHeight = 800;
+
+        // Calculer la position centrale de la fenêtre
+        var left = (screen.width / 2) - (popupWidth / 2);
+        var top = (screen.height / 2) - (popupHeight / 2);
+
+        // Ouvrir une nouvelle fenêtre popup automatiquement
+        window.open(formUrl, 'Formulaire SOS NADO', 'width=' + popupWidth + ', height=' + popupHeight + ', top=' + top + ', left=' + left);
+
+        // Fermer la fenêtre actuelle après l'ouverture du popup
+        window.close();
+    </script>
+
+</body>
+</html>
